@@ -110,8 +110,8 @@ class AdminStylesTest(models.Model):
         blank=True,
         on_delete=models.CASCADE,
         related_name='%(app_label)s_%(class)s_foreignkey_a',
-        verbose_name='ForeignKey',
-        help_text='this is a help text for the foreign key field'
+        verbose_name='ForeignKey A',
+        help_text='this is a help text for the foreign key field a'
     )
     foreignkey_b = models.ForeignKey(
         'self',
@@ -119,38 +119,32 @@ class AdminStylesTest(models.Model):
         blank=True,
         on_delete=models.CASCADE,
         related_name='%(app_label)s_%(class)s_foreignkey_b',
-        verbose_name='ForeignKey',
-        help_text='this is a help text for the foreign key field'
+        verbose_name='ForeignKey B',
+        help_text='this is a help text for the foreign key field b'
     )
     manytomany_a = models.ManyToManyField(
         'self',
         blank=True,
-        verbose_name='ManyToManyField',
+        verbose_name='ManyToManyField A',
         help_text='this is a help text for the many to many field a'
     )
     manytomany_b = models.ManyToManyField(
         'self',
         blank=True,
-        verbose_name='ManyToManyField',
+        verbose_name='ManyToManyField B',
         help_text='this is a help text for the many to many field b'
     )
     manytomany_c = models.ManyToManyField(
         'self',
         blank=True,
-        verbose_name='ManyToManyField',
+        verbose_name='ManyToManyField C',
         help_text='this is a help text for the many to many field c'
     )
     manytomany_d = models.ManyToManyField(
         'self',
         blank=True,
-        verbose_name='ManyToManyField',
+        verbose_name='ManyToManyField D',
         help_text='this is a help text for the many to many field d'
-    )
-    manytomany_e = models.ManyToManyField(
-        'self',
-        blank=True,
-        verbose_name='ManyToManyField',
-        help_text='this is a help text for the many to many field e'
     )
     onetoone = models.OneToOneField(
         'self',
@@ -170,11 +164,3 @@ class AdminStylesTest(models.Model):
 
     def __str__(self):
         return 'AdminStylesTest {}'.format(self.id)
-
-
-class AdminStylesTestProxy(AdminStylesTest):
-
-    class Meta:
-        proxy = True
-        verbose_name = 'AdminStylesTest Fieldsets'
-        verbose_name_plural = 'AdminStylesTests Fieldsets'

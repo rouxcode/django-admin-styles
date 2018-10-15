@@ -13,7 +13,7 @@ from watchdog.events import PatternMatchingEventHandler
 
 
 CONF_NAME = 'conf.py'
-ROOT_PATH = os.getcwd()
+ROOT_PATH = os.path.abspath(os.getcwd())
 sys.path.append(ROOT_PATH)
 
 
