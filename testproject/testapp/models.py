@@ -150,6 +150,7 @@ class AdminStylesTest(models.Model):
         'self',
         null=True,
         blank=True,
+        on_delete=models.SET_NULL,
         related_name='%(app_label)s_%(class)s_onetoone',
         verbose_name='OneToOneField',
         help_text='this is a help text for the one to one field'

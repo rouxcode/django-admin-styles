@@ -1,0 +1,10 @@
+html,
+body {
+    height: 100%;
+}
+
+.django-admin-styles {
+
+    @import "base/base";
+    @import "base/widgets";
+}

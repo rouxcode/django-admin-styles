@@ -1,0 +1,22 @@
+{% extends "admin/base.html" %}
+
+{% load static %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static "admin_styles/css/styles.css" %}" />
+{% include 'admin_styles/extrahead.html' %}
+{% endblock %}
+
+{% block bodyclass %}{{ block.super }} django-admin-styles{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">{% include 'admin_styles/svg/logo-django.svg' %}</a>
+</h1>
+{% endblock %}
+
+{% block welcome-msg %}{% endblock %}
+
+{% block nav-global %}{% endblock %}
