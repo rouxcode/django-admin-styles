@@ -27,24 +27,25 @@ form {
     }
 }
 
+fieldset.module {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="number"],
+    input[type="tel"],
+    textarea,
+    select,
+    .vTextField,
+    .vLargeTextField,
+    .colM .aligned .vLargeTextField,
+    .colM .aligned .vXMLLargeTextField {
+        box-sizing: border-box;
+        width: 100%;
+    }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="url"],
-input[type="number"],
-input[type="tel"],
-textarea,
-select,
-.vTextField,
-.vLargeTextField,
-.colM .aligned .vLargeTextField,
-.colM .aligned .vXMLLargeTextField {
-    box-sizing: border-box;
-    width: 100%;
-}
-
-input.vDateField,
-input.vTimeField {
-    width: 120px;
+    input.vDateField,
+    input.vTimeField {
+        width: 120px;
+    }
 }
