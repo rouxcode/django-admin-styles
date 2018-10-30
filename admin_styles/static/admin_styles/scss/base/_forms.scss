@@ -1,0 +1,50 @@
+form {
+
+
+    label {
+        float: none;
+    }
+
+    label + p,
+    label + div.help,
+    label + div.readonly,
+    input + p.help,
+    input + div.help,
+    select + p.help,
+    select + div.help,
+    textarea + p.help,
+    textarea + div.help {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .aligned {
+        p.help,
+        div.help {
+            margin-left: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select,
+.vTextField,
+.vLargeTextField,
+.colM .aligned .vLargeTextField,
+.colM .aligned .vXMLLargeTextField {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input.vDateField,
+input.vTimeField {
+    width: 120px;
+}

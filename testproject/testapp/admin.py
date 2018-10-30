@@ -46,6 +46,12 @@ class AdminStylesTestAdminForm(forms.ModelForm):
 
 class AdminStylesTestAdmin(admin.ModelAdmin):
 
+    inlines = [
+        AdminStylesTestInline,
+    ]
+    search_fields = [
+        'char',
+    ]
     filter_horizontal = [
         'manytomany_c',
     ]

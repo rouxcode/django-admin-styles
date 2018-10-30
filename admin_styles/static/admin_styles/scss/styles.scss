@@ -6,5 +6,6 @@ body {
 .django-admin-styles {
 
     @import "base/base";
+    @import "base/forms";
     @import "base/widgets";
 }

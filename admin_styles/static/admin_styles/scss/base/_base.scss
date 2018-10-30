@@ -1,3 +1,13 @@
+a {
+
+    &:link,
+    &:visited {
+        color: #0bf;
+    }
+}
+
+
+
 #header {
     height: 36px;
     color: #333;
@@ -6,14 +16,14 @@
 
     a:link,
     a:visited {
-        color: #000;
+        color: #555;
     }
 }
 
 #branding {
 
     h1 {
-        color: #000;
+        color: #555;
         font-size: 20px;
         line-height: 1;
     }
@@ -21,7 +31,7 @@
     a {
         position: relative;
         display: inline-block;
-        color: #000;
+        color: #555;
 
         &:after {
             content: '';
@@ -55,7 +65,7 @@
 
     a:focus,
     a:hover {
-        border-bottom-color: #000;
+        border-bottom-color: #555;
     }
 }
 
@@ -63,7 +73,7 @@
 .breadcrumbs {
     color: #fff;
     font-weight: bold;
-    background: #777;
+    background: #555;
 
     a {
         font-weight: normal;
@@ -83,6 +93,28 @@
     background-color: #417690;
 }
 
+
+.module h2,
+.module caption,
+.inline-group h2, {
+    color: #333;
+    font-weight: bold;
+    background-color: #eee;
+}
+
+.help,
+p.help,
+form p.help,
+div.help,
+form div.help,
+div.help li {
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+.timezonewarning  {
+    font-size: 12px;
+}
 
 .button.default,
 input[type=submit].default,
