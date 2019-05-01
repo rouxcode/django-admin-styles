@@ -1,3 +1,17 @@
 #changelist-search {
-    
+
+}
+
+#changelist-filter {
+
+    li {
+
+        &.selected {
+
+            a {
+                color: #111;
+                font-weight: bold;
+            }
+        }
+    }
 }

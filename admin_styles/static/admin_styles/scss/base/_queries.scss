@@ -22,6 +22,32 @@
         }
     }
 
+    .form-row {
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="url"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select,
+        .vTextField {
+            min-height: 20px;
+            padding: 5px 6px;
+            font-size: 13px;
+        }
+    }
+
+    .aligned {
+
+        .add-another,
+        .related-lookup,
+        .datetimeshortcuts,
+        .related-lookup + strong {
+            align-self: center;
+            margin-left: 0;
+        }
+    }
 }
 
 @media (max-width: 767px) {
