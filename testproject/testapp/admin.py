@@ -100,6 +100,20 @@ class AdminStylesTestAdmin(admin.ModelAdmin):
             ],
         }),
     ]
+    list_display = [
+        '__str__',
+        'boolean',
+        'char',
+        'char_choices',
+    ]
+    list_editable = [
+        'boolean',
+        'char',
+        'char_choices',
+    ]
+    list_filter = [
+        'boolean',
+    ]
 
 
 admin.site.register(AdminStylesTest, AdminStylesTestAdmin)

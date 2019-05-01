@@ -1,7 +1,32 @@
+ $buttons-border-radius: 3px;
+
 .calendar td a:active,
 .timelist a:active {
     color: white;
     background: #417690;
+}
+
+.calendar-shortcuts,
+span.datetimeshortcuts {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+
+    a {
+        display: inline-block;
+        box-sizing: border-box;
+        height: 30px;
+        margin: 0 0 4px 6px;
+        padding: 4px;
+        color: #666;
+        font-size: 13px;
+        border: 1px solid #ddd;
+        border-radius: $buttons-border-radius;
+
+        &:hover {
+            background-color: #f2f2f2;
+        }
+    }
 }
 
 .datetime {
@@ -21,24 +46,70 @@
 }
 
 
-.related-widget-wrapper  {
+.related-widget-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    float: none;
+
+    & > select {
+        width: calc(100% - 126px);
+    }
+
+    ul {
+        width: 100%;
+        margin: 0;
+    }
+
+    .add-related,
+    .delete-related,
+    .change-related {
+        display: block;
+        box-sizing: border-box;
+        width: 24px;
+        height: 24px;
+        margin: 6px 10px 6px 0;
+        padding: 5px;
+        line-height: 1;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: $buttons-border-radius;
+
+        img {
+            display: block;
+            width: 13px;
+        }
+    }
+
+    .add-related {
+        border-color: #5da03d;
+    }
+
+    .delete-related {
+        border-color: #dd4646;
+    }
+
+    .change-related {
+        border-color: #0bf;
+    }
 
     .selector {
         display: flex;
         align-items: center;
+        width: 100%;
 
-        .selector-avilable,
+        .selector-available,
         .selector-chooser,
         .selector-chosen {
             float: none;
         }
 
-        .selector-avilable,
+        .selector-available,
         .selector-chosen {
             width: calc(50% - 16px);
         }
 
         .selector-chooser {
+            width: 22px;
             margin: 0 5px;
         }
 
@@ -74,7 +145,7 @@
     .selector.stacked {
         flex-direction: column;
 
-        .selector-avilable,
+        .selector-available,
         .selector-chosen {
             width: 100%;
         }
@@ -82,6 +153,7 @@
         .selector-chooser {
             display: flex;
             justify-content: center;
+            width: auto;
             margin: 0 0 10px;
 
             li {
@@ -90,3 +162,4 @@
         }
     }
 }
+
