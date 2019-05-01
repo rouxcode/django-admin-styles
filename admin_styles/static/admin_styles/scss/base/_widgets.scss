@@ -3,3 +3,90 @@
     color: white;
     background: #417690;
 }
+
+.datetime {
+
+    .timezonewarning {
+        color: #999;
+    }
+
+    .datetime-label {
+        display: inline-block;
+        vertical-align: middle;
+        min-width: 60px;
+        color: #666;
+        font-size: 13px;
+        font-weight: bold;
+    }
+}
+
+
+.related-widget-wrapper  {
+
+    .selector {
+        display: flex;
+        align-items: center;
+
+        .selector-avilable,
+        .selector-chooser,
+        .selector-chosen {
+            float: none;
+        }
+
+        .selector-avilable,
+        .selector-chosen {
+            width: calc(50% - 16px);
+        }
+
+        .selector-chooser {
+            margin: 0 5px;
+        }
+
+        .selector-filter {
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            min-height: 50px;
+
+            label {
+                float: none;
+                margin: 0 10px 0 0;
+            }
+        }
+
+        select {
+            height: 300px;
+        }
+
+        .selector-chosen select {
+            height: 350px;
+        }
+
+        select {
+            padding: 0;
+        }
+
+        option {
+            padding: 4px;
+        }
+    }
+
+    .selector.stacked {
+        flex-direction: column;
+
+        .selector-avilable,
+        .selector-chosen {
+            width: 100%;
+        }
+
+        .selector-chooser {
+            display: flex;
+            justify-content: center;
+            margin: 0 0 10px;
+
+            li {
+                float: none;
+            }
+        }
+    }
+}

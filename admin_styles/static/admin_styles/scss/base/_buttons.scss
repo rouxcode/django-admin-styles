@@ -1,0 +1,52 @@
+$buttons-border-radius: 3px;
+
+.button,
+input[type="submit"],
+input[type="button"],
+a.button {
+    padding: 10px 15px;
+    color: #666;
+    line-height: 1;
+    border: 1px solid #ddd;
+    border-radius: $buttons-border-radius;
+    background: #fff;
+
+    &:hover {
+        background-color: #f2f2f2;
+    }
+}
+
+input[type="submit"].default {
+    color: #fff;
+    line-height: 1;
+    border: 1px solid #0bf;
+    background-color: #0bf;
+
+    &:hover {
+        border-color: #00aded;
+        background-color: #00aded;
+    }
+}
+
+a.deletelink {
+    color: #fff;
+    line-height: 1;
+    border-radius: $buttons-border-radius;
+}
+
+// OBJECT TOOLS  Buttons -----------------------------------------------------
+.object-tools {
+
+    a:link,
+    a:visited {
+        color: #fff;
+        border: 1px solid #0bf;
+        border-radius: $buttons-border-radius;
+        background-color: #0bf;
+    }
+
+    a:hover {
+        border-color: #00aded;
+        background-color: #00aded;
+    }
+}

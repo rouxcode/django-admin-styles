@@ -19,10 +19,16 @@ form {
     }
 
     .aligned {
+
         p.help,
         div.help {
             margin-left: 0;
             padding-left: 0;
+            color: #999;
+        }
+
+        input {
+            margin-left: 0;
         }
     }
 }
@@ -42,10 +48,15 @@ fieldset.module {
     .colM .aligned .vXMLLargeTextField {
         box-sizing: border-box;
         width: 100%;
+        border-radius: 0;
     }
 
     input.vDateField,
     input.vTimeField {
         width: 120px;
     }
+}
+
+.submitline {
+
 }

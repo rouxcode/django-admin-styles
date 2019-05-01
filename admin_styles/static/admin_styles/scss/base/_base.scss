@@ -9,13 +9,16 @@ a {
 
 
 #header {
+    position: relative;
+    z-index: 3;
     height: 36px;
-    color: #fff;
-    background: #333;
+    color: #222;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0, 0.5);
 
     a:link,
     a:visited {
-        color: #fff;
+        color: #444;
     }
 }
 
@@ -49,7 +52,7 @@ a {
     }
 
     path {
-        fill: #fff;
+        fill: #333;
     }
 }
 
@@ -75,17 +78,22 @@ a {
 
 
 .breadcrumbs {
-    color: #fff;
+    position: relative;
+    z-index: 2;
+    margin: 0 40px;
+    padding: 10px 0;
+    color: #222;
     font-weight: bold;
-    background: #666;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
 
     a {
         font-weight: normal;
 
         &:focus,
         &:hover {
-            color: #fff;
-            border-bottom: 1px solid #fff;
+            color: #333;
+            border-bottom: 1px solid #333;
         }
 
     }
