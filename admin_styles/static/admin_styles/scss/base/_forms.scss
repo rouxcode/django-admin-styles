@@ -36,6 +36,7 @@ form {
     select {
         box-sizing: border-box;
         border-radius: 0;
+        background-color: #fff;
     }
 
     .aligned {
@@ -114,6 +115,11 @@ fieldset.collapsed {
             }
         }
     }
+}
+
+.aligned .form-row > div {
+    display: block;
+    width: 100%;
 }
 
 
