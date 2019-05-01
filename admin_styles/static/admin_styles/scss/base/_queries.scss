@@ -1,3 +1,29 @@
+@media (max-width: 1024px) {
+
+    textarea {
+        max-width: 100%;
+        max-height: 100000000000vh;
+    }
+
+    .related-widget-wrapper {
+
+        .selector {
+
+            .selector-chooser {
+                width: 26px;
+            }
+        }
+
+        .selector.stacked {
+
+            .selector-chooser {
+                margin: 10px 0;
+            }
+        }
+    }
+
+}
+
 @media (max-width: 767px) {
 
     #container {
