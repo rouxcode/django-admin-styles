@@ -1,3 +1,18 @@
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus, select:focus,
+.vTextField:focus {
+    border-color: #0bf;
+}
+
+label {
+    color: #333;
+}
+
 form {
 
     td,
@@ -101,7 +116,7 @@ fieldset.collapsed {
 .form-row {
     box-sizing: border-box;
     padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ccc;
 
     &.errors {
         margin: 0 0 4px;
@@ -124,7 +139,7 @@ fieldset.collapsed {
 
 
 .paginator,
-.submit-row {
+&.change-form .submit-row {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -136,10 +151,15 @@ fieldset.collapsed {
     border: 0;
     border-top: 1px solid #ddd;
     border-radius: 0;
-    box-shadow: 0 -10px 10px rgba(255,255,255, 1);
+    box-shadow: 0 -10px 10px rgba(#f4f4f4, 1);
 }
 
 .filtered .paginator {
     width: 100%;
     margin: 0;
+}
+
+.calendarbox,
+.clockbox {
+    width: auto;
 }

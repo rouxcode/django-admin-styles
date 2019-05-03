@@ -1,3 +1,5 @@
+
+
 a {
 
     &:link,
@@ -9,6 +11,7 @@ a {
 
 #container {
     padding: 56px 0;
+    background-color: #f4f4f4;
 }
 
 #header {
@@ -31,6 +34,7 @@ a {
 }
 
 #branding {
+    float: none;
 
     h1 {
         color: #fff;
@@ -40,7 +44,7 @@ a {
 
     a {
         position: relative;
-        display: inline-block;
+        display: block;
         color: #fff;
 
         &:after {
@@ -89,11 +93,11 @@ a {
 .breadcrumbs {
     position: relative;
     z-index: 2;
-    margin: 0 20px;
-    padding: 10px 0;
+    margin: 0;
+    padding: 10px 20px;
     color: #222;
     font-weight: bold;
-    background-color: #fff;
+    background-color: #f4f4f4;
     border-bottom: 1px solid #ddd;
 
     a {
@@ -109,14 +113,21 @@ a {
 }
 
 .messagelist {
-    margin: 0 20px;
-    border-bottom: 1px solid #ddd;
+    z-index: 3;
+    position: relative;
+    box-sizing: border-box;
 
     li {
         margin: 0;
         padding-left: 40px;
         font-size: 15px;
         background-position: 15px 13px;
+    }
+
+    .success {
+        margin: -1px 0;
+        border-bottom: 1px solid #70bf2b;
+        border-top: 1px solid #70bf2b;
     }
 }
 
@@ -156,7 +167,7 @@ a {
     box-sizing: border-box;
     color: #333;
     font-weight: bold;
-    background-color: #eee;
+    background-color: #ddd;
 }
 
 .module {
@@ -164,6 +175,7 @@ a {
     box-sizing: border-box;
     width: 100%;
     overflow: hidden;
+    background: #f4f4f4;
 }
 
 .help,

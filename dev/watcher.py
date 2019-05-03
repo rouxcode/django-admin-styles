@@ -42,16 +42,19 @@ class Handler(PatternMatchingEventHandler):
         super(Handler, self).__init__(*args, **kwargs)
 
     def on_modified(self, event):
-        sass.compile(
-            dirname=[self.scss, self.css],
-            output_style=self.output_style,
-        )
-        logger.info(
-            'WATCHER: compiled {} to {}'.format(
-                self.pathes['scss'],
-                self.pathes['css'],
+        try:
+            sass.compile(
+                dirname=[self.scss, self.css],
+                output_style=self.output_style,
             )
-        )
+            logger.info(
+                'WATCHER: compiled {} to {}'.format(
+                    self.pathes['scss'],
+                    self.pathes['css'],
+                )
+            )
+        except Exception as e:
+            logger.error('WATCHER error: {}'.format(e))
 
 
 class Watcher(object):
