@@ -165,3 +165,38 @@ class AdminStylesTest(models.Model):
 
     def __str__(self):
         return 'AdminStylesTest {}'.format(self.id)
+
+
+class SimpleInlineTest(models.Model):
+
+    parent = models.ForeignKey(
+        'testapp.AdminStylesTest',
+        on_delete=models.CASCADE,
+    )
+    boolean = models.BooleanField(
+        default=True,
+        verbose_name='boolean',
+        help_text='this is a help text for the boolean field',
+    )
+    char = models.CharField(
+        max_length=250,
+
+        verbose_name='charfield',
+        help_text='this is a help text for the char field'
+    )
+    char_choices = models.CharField(
+        max_length=250,
+        choices=[
+            ('one', 'one'),
+            ('two', 'two'),
+            ('three', 'three'),
+            ('four', 'alkdsjalksdj asdlkj asdlkajs dlakjds lakjdslkajsd l'),
+        ],
+        verbose_name='charfield choices',
+        help_text='this is a help text for the char field choices'
+    )
+    date = models.DateField(
+        default=timezone.now,
+        verbose_name='DateField',
+        help_text='this is a help text for the date field'
+    )

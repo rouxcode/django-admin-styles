@@ -3,7 +3,22 @@ from __future__ import unicode_literals
 from django import forms
 from django.contrib import admin
 
-from .models import AdminStylesTest
+from .models import AdminStylesTest, SimpleInlineTest
+
+
+class SimpleInlineTestInlineForm(forms.ModelForm):
+
+    class Meta:
+        fields = '__all__'
+        model = SimpleInlineTest
+        widgets = {}
+
+
+class SimpleInlineTestInline(admin.TabularInline):
+
+    extra = 0
+    form = SimpleInlineTestInlineForm
+    model = SimpleInlineTest
 
 
 class AdminStylesTestInlineForm(forms.ModelForm):
@@ -47,6 +62,7 @@ class AdminStylesTestAdminForm(forms.ModelForm):
 class AdminStylesTestAdmin(admin.ModelAdmin):
 
     inlines = [
+        SimpleInlineTestInline,
         AdminStylesTestInline,
     ]
     search_fields = [
