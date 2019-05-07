@@ -137,6 +137,9 @@ fieldset.collapsed {
     width: 100%;
 }
 
+.aligned .form-row > .fieldBox {
+    width: auto;
+}
 
 .paginator,
 &.change-form .submit-row {

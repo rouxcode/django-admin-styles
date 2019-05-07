@@ -74,8 +74,10 @@ class AdminStylesTestAdmin(admin.ModelAdmin):
                 'integer',
                 'ipaddress',
                 'text',
-                'time',
-                'url',
+                (
+                    'time',
+                    'url',
+                )
             ]
         }),
         ('File', {
