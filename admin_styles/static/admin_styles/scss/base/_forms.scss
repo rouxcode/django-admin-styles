@@ -137,7 +137,8 @@ fieldset.collapsed {
     width: 100%;
 }
 
-.aligned .form-row > .fieldBox {
+.aligned .form-row > .fieldBox,
+.aligned .form-row > .field-box {
     width: auto;
 }
 
