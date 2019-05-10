@@ -103,6 +103,10 @@ fieldset.module {
 fieldset.collapsed {
     border: 0;
     border-radius: 0;
+
+    .form-row {
+        display: none;
+    }
 }
 
 .errornote {
@@ -112,8 +116,8 @@ fieldset.collapsed {
     background-color: #faf0f0;
 }
 
-
 .form-row {
+    float: none;
     box-sizing: border-box;
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
@@ -132,6 +136,12 @@ fieldset.collapsed {
     }
 }
 
+div.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .aligned .form-row > div {
     display: block;
     width: 100%;
@@ -140,6 +150,18 @@ fieldset.collapsed {
 .aligned .form-row > .fieldBox,
 .aligned .form-row > .field-box {
     width: auto;
+    float: none;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 20px;
+    padding-right: 10px;
+    border-right: 1px solid #ddd;
+
+    &:last-child {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: 0;
+    }
 }
 
 .paginator,

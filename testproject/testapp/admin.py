@@ -89,8 +89,8 @@ class AdminStylesTestAdmin(admin.ModelAdmin):
                 'float',
                 'integer',
                 'ipaddress',
-                'text',
                 (
+                    'text',
                     'time',
                     'url',
                 )
