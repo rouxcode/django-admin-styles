@@ -85,15 +85,15 @@ class AdminStylesTestAdmin(admin.ModelAdmin):
                 'datetime',
                 'decimal',
                 'duration',
-                'email',
-                'float',
-                'integer',
-                'ipaddress',
                 (
+                    'email',
+                    'float',
+                    'integer',
+                    'ipaddress',
                     'text',
-                    'time',
-                    'url',
-                )
+                ),
+                'time',
+                'url',
             ]
         }),
         ('File', {

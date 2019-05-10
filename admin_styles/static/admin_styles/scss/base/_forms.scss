@@ -120,7 +120,7 @@ fieldset.collapsed {
     float: none;
     box-sizing: border-box;
     padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
 
     &.errors {
         margin: 0 0 4px;
@@ -139,6 +139,7 @@ fieldset.collapsed {
 div.form-row {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     justify-content: space-between;
 }
 
@@ -153,15 +154,8 @@ div.form-row {
     float: none;
     flex-grow: 1;
     flex-shrink: 1;
-    margin-right: 20px;
-    padding-right: 10px;
-    border-right: 1px solid #ddd;
-
-    &:last-child {
-        margin-right: 0;
-        padding-right: 0;
-        border-right: 0;
-    }
+    margin: 0;
+    padding: 10px;
 }
 
 .paginator,
@@ -173,7 +167,7 @@ div.form-row {
     width: 100%;
     margin: 0;
     padding: 12px 20px;
-    background-color: #fff;
+    background-color: #f4f4f4;
     border: 0;
     border-top: 1px solid #ddd;
     border-radius: 0;
