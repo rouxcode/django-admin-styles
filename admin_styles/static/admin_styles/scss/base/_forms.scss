@@ -158,6 +158,16 @@ div.form-row {
     padding: 10px;
 }
 
+
+.inline-group .tabular tr td.original {
+    position: relative;
+
+    p {
+        top: 0.5em;
+        font-size: 11px;
+    }
+}
+
 .paginator,
 &.change-form .submit-row {
     position: fixed;
