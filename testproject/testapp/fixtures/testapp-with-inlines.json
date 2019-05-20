@@ -1,0 +1,110 @@
+[
+{
+  "model": "testapp.adminstylestest",
+  "pk": 1,
+  "fields": {
+    "boolean": true,
+    "char": "asdasdasd",
+    "char_choices": "one",
+    "date": "2018-10-05",
+    "datetime": "2018-10-05T10:16:07Z",
+    "decimal": "32.00",
+    "duration": "00:03:33",
+    "email": "hmpf@bmpf.klo",
+    "file": "",
+    "filepath": "",
+    "float": 2.0,
+    "image": "",
+    "integer": 2,
+    "ipaddress": "127.0.0.1",
+    "text": "asdasdasdasd",
+    "time": "10:16:39",
+    "url": "http://djangoproject.org",
+    "foreignkey_a": null,
+    "foreignkey_b": null,
+    "onetoone": null,
+    "manytomany_a": [],
+    "manytomany_b": [
+      2
+    ],
+    "manytomany_c": [
+      2
+    ],
+    "manytomany_d": [
+      2
+    ]
+  }
+},
+{
+  "model": "testapp.adminstylestest",
+  "pk": 2,
+  "fields": {
+    "boolean": true,
+    "char": "awsdasd",
+    "char_choices": "one",
+    "date": "2018-10-05",
+    "datetime": "2018-10-05T10:26:27Z",
+    "decimal": "12.00",
+    "duration": "00:00:12",
+    "email": "hmpf@bmpf.klo",
+    "file": "",
+    "filepath": "",
+    "float": 1.0,
+    "image": "",
+    "integer": 1,
+    "ipaddress": "127.0.0.1",
+    "text": "qweqwe",
+    "time": "10:26:55",
+    "url": "http://djangoproject.org",
+    "foreignkey_a": null,
+    "foreignkey_b": null,
+    "onetoone": 1,
+    "manytomany_a": [
+      2
+    ],
+    "manytomany_b": [
+      1
+    ],
+    "manytomany_c": [
+      1,
+      2
+    ],
+    "manytomany_d": [
+      1
+    ]
+  }
+},
+{
+  "model": "testapp.simpleinlinetest",
+  "pk": 1,
+  "fields": {
+    "parent": 2,
+    "boolean": true,
+    "char": "123",
+    "char_choices": "two",
+    "date": "2019-05-20"
+  }
+},
+{
+  "model": "testapp.simpleinlinetest",
+  "pk": 2,
+  "fields": {
+    "parent": 2,
+    "boolean": true,
+    "char": "123123",
+    "char_choices": "three",
+    "date": "2019-05-20"
+  }
+},
+{
+  "model": "testapp.simpleinlinetest",
+  "pk": 3,
+  "fields": {
+    "parent": 2,
+    "boolean": true,
+    "char": "Trheeeee",
+    "char_choices": "two",
+    "date": "2019-05-20"
+  }
+}
+]
