@@ -3,7 +3,8 @@ $buttons-border-radius: 3px;
 .button,
 input[type="submit"],
 input[type="button"],
-a.button {
+a.button  {
+    box-sizing: border-box;
     padding: 10px 15px;
     color: #666;
     line-height: 1;
