@@ -95,3 +95,17 @@
         }
     }
 }
+
+.paginator {
+
+    a:link, a:visited {
+        background: $main_color;
+        color: white;
+    }
+    a.showall {
+        &:link, &:visited {
+            background: none;
+            color: $main_color;
+        }
+    }
+}

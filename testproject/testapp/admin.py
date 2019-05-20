@@ -60,7 +60,7 @@ class AdminStylesTestAdminForm(forms.ModelForm):
 
 
 class AdminStylesTestAdmin(admin.ModelAdmin):
-
+    list_per_page = 3
     inlines = [
         SimpleInlineTestInline,
         AdminStylesTestInline,

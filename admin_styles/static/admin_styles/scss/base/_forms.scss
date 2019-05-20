@@ -6,7 +6,7 @@ input[type="number"]:focus,
 input[type="tel"]:focus,
 textarea:focus, select:focus,
 .vTextField:focus {
-    border-color: #0bf;
+    border-color: $main_color;
 }
 
 label {
@@ -148,6 +148,10 @@ div.form-row {
     width: 100%;
 }
 
+.aligned .form-row.fieldbox-wrap {
+    margin-right: -20px
+}
+
 .aligned .form-row > .fieldBox,
 .aligned .form-row > .field-box {
     width: auto;
@@ -155,7 +159,8 @@ div.form-row {
     flex-grow: 1;
     flex-shrink: 1;
     margin: 0;
-    padding: 10px;
+    // padding: 10px;
+    padding-right: 20px
 }
 
 .inline-group .tabular tr td.original {
