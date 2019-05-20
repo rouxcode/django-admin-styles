@@ -12,14 +12,22 @@
         box-sizing: border-box;
         width: calc(100% - 260px);
         margin: 0;
+        border: 0;
+        background-color: #ddd;
     }
 
     #changelist-filter {
         order: 3;
+        z-index: 1;
         position: relative;
         top: auto;
         right: auto;
         box-sizing: border-box;
+        margin-top: -46px;
+
+        h2 {
+            padding: 13px 15px;
+        }
     }
 
     #changelist-form {
