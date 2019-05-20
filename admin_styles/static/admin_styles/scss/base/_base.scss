@@ -15,7 +15,8 @@ a {
 }
 
 #header {
-    z-index: 3;
+    // more than #changelist-filter
+    z-index: 1001;
     position: fixed;
     top: 0;
     left: 0;
@@ -164,7 +165,7 @@ a {
 
 .module h2,
 .module caption,
-.inline-group h2, {
+.inline-group h2 {
     box-sizing: border-box;
     color: #333;
     font-weight: bold;
@@ -175,7 +176,8 @@ a {
     display: block;
     box-sizing: border-box;
     width: 100%;
-    overflow: hidden;
+    // why? cuts off filters!
+    // overflow: hidden;
     background: #f4f4f4;
 }
 

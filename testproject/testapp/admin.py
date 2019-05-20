@@ -131,6 +131,12 @@ class AdminStylesTestAdmin(admin.ModelAdmin):
     ]
     list_filter = [
         'boolean',
+        'char',
+        'char_choices',
+        'date',
+        'datetime',
+        'decimal',
+        'duration',
     ]
 
 

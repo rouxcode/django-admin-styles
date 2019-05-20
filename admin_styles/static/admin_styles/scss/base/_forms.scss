@@ -158,7 +158,6 @@ div.form-row {
     padding: 10px;
 }
 
-
 .inline-group .tabular tr td.original {
     position: relative;
 
@@ -171,6 +170,8 @@ div.form-row {
 .paginator,
 &.change-form .submit-row {
     position: fixed;
+    // more than #changelist-filter
+    z-index: 1001;
     left: 0;
     bottom: 0;
     box-sizing: border-box;
