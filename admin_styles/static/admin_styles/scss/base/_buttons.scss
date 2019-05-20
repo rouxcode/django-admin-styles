@@ -19,8 +19,8 @@ a.button {
 input[type="submit"].default {
     color: #fff;
     line-height: 1;
-    border: 1px solid #0bf;
-    background-color: #0bf;
+    border: 1px solid $main_color;
+    background-color: $main_color;
 
     &:hover {
         border-color: #00aded;
@@ -40,9 +40,9 @@ a.deletelink {
     a:link,
     a:visited {
         color: #fff;
-        border: 1px solid #0bf;
+        border: 1px solid $main_color;
         border-radius: $buttons-border-radius;
-        background-color: #0bf;
+        background-color: $main_color;
     }
 
     a:hover {

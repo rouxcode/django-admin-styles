@@ -6,7 +6,7 @@ input[type="number"]:focus,
 input[type="tel"]:focus,
 textarea:focus, select:focus,
 .vTextField:focus {
-    border-color: #0bf;
+    border-color: $main_color;
 }
 
 label {
