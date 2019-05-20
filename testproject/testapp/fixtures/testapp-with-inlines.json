@@ -106,5 +106,83 @@
     "char_choices": "two",
     "date": "2019-05-20"
   }
+},
+{
+  "model": "testapp.adminstylestest",
+  "pk": 4,
+  "fields": {
+    "boolean": true,
+    "char": "awsdasd",
+    "char_choices": "one",
+    "date": "2018-10-05",
+    "datetime": "2018-10-05T10:26:27Z",
+    "decimal": "12.00",
+    "duration": "00:00:12",
+    "email": "hmpf@bmpf.klo",
+    "file": "",
+    "filepath": "",
+    "float": 1.0,
+    "image": "",
+    "integer": 1,
+    "ipaddress": "127.0.0.1",
+    "text": "qweqwe",
+    "time": "10:26:55",
+    "url": "http://djangoproject.org",
+    "foreignkey_a": null,
+    "foreignkey_b": null,
+    "onetoone": null,
+    "manytomany_a": [
+      2
+    ],
+    "manytomany_b": [
+      1
+    ],
+    "manytomany_c": [
+      1,
+      2
+    ],
+    "manytomany_d": [
+      1
+    ]
+  }
+},
+{
+  "model": "testapp.adminstylestest",
+  "pk": 5,
+  "fields": {
+    "boolean": true,
+    "char": "awsdasd",
+    "char_choices": "one",
+    "date": "2018-10-05",
+    "datetime": "2018-10-05T10:26:27Z",
+    "decimal": "12.00",
+    "duration": "00:00:12",
+    "email": "hmpf@bmpf.klo",
+    "file": "",
+    "filepath": "",
+    "float": 1.0,
+    "image": "",
+    "integer": 1,
+    "ipaddress": "127.0.0.1",
+    "text": "qweqwe",
+    "time": "10:26:55",
+    "url": "http://djangoproject.org",
+    "foreignkey_a": null,
+    "foreignkey_b": null,
+    "onetoone": null,
+    "manytomany_a": [
+      2
+    ],
+    "manytomany_b": [
+      1
+    ],
+    "manytomany_c": [
+      1,
+      2
+    ],
+    "manytomany_d": [
+      1
+    ]
+  }
 }
 ]
