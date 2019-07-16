@@ -8,6 +8,22 @@ a {
     }
 }
 
+table {
+
+    caption {
+
+        a:link,
+        a:visited {
+            color: #444;
+        }
+
+        a:hover {
+            color: #222;
+            text-decoration: none;
+        }
+    }
+}
+
 
 #container {
     padding: 56px 0;
