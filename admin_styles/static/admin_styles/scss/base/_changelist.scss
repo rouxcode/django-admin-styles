@@ -7,10 +7,18 @@
         justify-content: space-between;
     }
 
+    &.filtered {
+
+        #toolbar,
+        #changelist-form {
+            width: calc(100% - 260px);
+        }
+    }
+
     #toolbar {
         order: 1;
         box-sizing: border-box;
-        width: calc(100% - 260px);
+        width: 100%;
         margin: 0;
         border: 0;
         background-color: #ddd;
@@ -33,7 +41,7 @@
     #changelist-form {
         order: 2;
         box-sizing: border-box;
-        width: calc(100% - 260px);
+        width: 100%;
         margin: 0;
     }
 
