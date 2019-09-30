@@ -28,4 +28,17 @@
 .cms-pagetree-header {
     border: none  !important;
     padding: 0 0 15px 0  !important;
+    .cms-icon {
+        height: $cms_button_height !important;
+        padding-top: 7px !important;
+    }
+    .cms-btn-toolbar {
+        line-height: 27px;
+    }
+    .cms-pagetree-header-create {
+        height: $cms_button_height !important;
+    }
+    .cms-pagetree-header-search .cms-pagetree-header-filter input {
+        height: $cms_button_height !important;
+    }
 }
