@@ -1,21 +1,30 @@
 
+// basic cms "fixes", for modal and sideframe in iframes
+
+// this is only added for the cms/page changelist. revert.
 &.cms-admin-sideframe {
     margin-top: 0 !important;  // always. against the cms itself.
 }
-
-
+// adapt header height, so the toolbar is the same height as our header
 &.cms-admin-sideframe, &.cms-admin-modal {
     #header {
         height: $cms_header_height;
     }
 }
+// we dont need no, toop padding.
+&.cms-admin-modal {
+    #container {
+        padding-top: 0;
+    }
+}
 
 
 // changelist / pagetree
+// revert cms quirks
 .cms-pagetree-root {
     box-shadow: none !important;
 }
-
+// make it more standard
 .cms-pagetree-header {
     border: none  !important;
     padding: 0 0 15px 0  !important;
