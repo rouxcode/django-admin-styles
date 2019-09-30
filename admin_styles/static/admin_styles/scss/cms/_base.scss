@@ -13,10 +13,10 @@
 
 // changelist / pagetree
 .cms-pagetree-root {
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .cms-pagetree-header {
-    border: none;
-    padding: 0 0 15px 0;
+    border: none  !important;
+    padding: 0 0 15px 0  !important;
 }
