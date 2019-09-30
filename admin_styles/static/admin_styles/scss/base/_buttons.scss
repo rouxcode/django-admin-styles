@@ -3,7 +3,8 @@ $buttons-border-radius: 3px;
 .button,
 input[type="submit"],
 input[type="button"],
-a.button {
+a.button  {
+    box-sizing: border-box;
     padding: 10px 15px;
     color: #666;
     line-height: 1;
@@ -17,6 +18,7 @@ a.button {
 }
 
 input[type="submit"].default {
+    float: none;
     color: #fff;
     line-height: 1;
     border: 1px solid $main_color;
@@ -34,7 +36,45 @@ a.deletelink {
     border-radius: $buttons-border-radius;
 }
 
+.submit-row {
+
+    display: flex;
+    justify-content: flex-end;
+
+    p.deletelink-box {
+        order: 1;
+        float: none;
+        margin: 0 auto 0 0;
+    }
+
+    input[type="submit"] {
+        order: 2;
+    }
+
+    input[type="submit"].default {
+        order: 3;
+    }
+
+    a.closelink {
+        order: 4;
+        box-sizing: border-box;
+        height: 35px;
+        padding: 9px 15px;
+        color: #fff;
+        line-height: 1;
+        border: 1px solid #999;
+        border-radius: $buttons-border-radius;
+        background: #999;
+
+        &:hover {
+            background-color: #777;
+        }
+    }
+}
+
+
 // OBJECT TOOLS  Buttons -----------------------------------------------------
+
 .object-tools {
 
     a:link,
