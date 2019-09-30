@@ -9,3 +9,14 @@
         height: $cms_header_height;
     }
 }
+
+
+// changelist / pagetree
+.cms-pagetree-root {
+    box-shadow: none;
+}
+
+.cms-pagetree-header {
+    border: none;
+    padding: 0 0 15px 0;
+}
