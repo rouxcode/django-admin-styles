@@ -1,0 +1,8 @@
+
+&.cms-admin-sideframe, &.cms-admin-modal {
+    #header {
+        height: $cms_header_height;
+        //height: 46px;
+        margin-top: 0 !important;  // always. against the cms itself.
+    }
+}
