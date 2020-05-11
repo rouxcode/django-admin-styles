@@ -1,0 +1,7 @@
+form .form-row .filer-dropzone {
+    width: 100%;
+
+    & ~ a {
+        display: none !important;
+    }
+}
