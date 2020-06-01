@@ -168,3 +168,8 @@ span.datetimeshortcuts {
     }
 }
 
+.ckeditor-widget {
+    box-sizing: border-box;
+    display: block;
+    width: calc(100% - 2px);
+}
