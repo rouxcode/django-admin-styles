@@ -5,3 +5,13 @@ form .form-row .filer-dropzone {
         display: none !important;
     }
 }
+
+.filebrowser {
+    
+    #container {
+        .breadcrumbs + #content, 
+        .breadcrumbs + .messagelist + #content {
+            margin-left: 0% !important;
+        }
+    }
+}

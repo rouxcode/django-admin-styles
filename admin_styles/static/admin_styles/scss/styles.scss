@@ -13,8 +13,8 @@ body {
     background-color: #f4f4f4;
 }
 
-.admin-styles {
-
+.admin-styles,
+.filebrowser {
     @import "base/base";
     @import "base/buttons";
     @import "base/changelist";
