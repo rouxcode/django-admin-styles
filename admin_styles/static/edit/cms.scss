@@ -30,3 +30,25 @@
 .cms-sideframe {
     max-width: 1024px;
 }
+
+div.cms {
+    
+    .cms-sideframe-controls {
+        right: -50px;
+        background-color: pink;
+    }
+
+    .cms-sideframe-history {
+        display: none;
+    }
+
+    .cms-sideframe-close {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cms-modal {
+        //min-width: 1024px;
+        max-width: 100vw;
+    }
+}
