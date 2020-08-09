@@ -1,0 +1,32 @@
+// ----------------------------------------------------------------------------
+// CMS Frontend
+// to manualy include in your frontend scss
+// ----------------------------------------------------------------------------
+
+.cms-toolbar {
+
+    .cms-btn {
+
+    }
+    
+    .cms-btn-disabled {
+        display: none;
+    }
+
+    .cms-toolbar-item-logo {
+        box-sizing: border-box;
+        width: 100px;
+        height: 46px;
+        padding: 5px 10px;
+
+        svg {
+            display: block;
+            width: 80px;
+            height: 36px;
+        }
+    }
+}
+
+.cms-sideframe {
+    max-width: 1024px;
+}
