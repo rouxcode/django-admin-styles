@@ -3,6 +3,7 @@
     fieldset.module {
 
         &.collapsable {
+
             h2 {
                 position: relative;
             }
@@ -21,7 +22,8 @@
             margin-bottom: 10px;
 
             .form-row,
-            .inline-related {
+            .inline-related,
+            .add-row {
                 display: none;
             }
 
@@ -29,5 +31,11 @@
                 content: '[ + ]';
             }
         }
+    }
+
+    .admin-sort-inline,
+    .inline-group {
+        box-sizing: border-box;
+        width: 100%;
     }
 }

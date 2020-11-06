@@ -4,10 +4,15 @@
 
 {% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
 
-{% block extrahead %}
+{% block extrahead %}{% spaceless %}
+
+{# admin-styles styles & script  #}
 {% include 'admin_styles/adminhead.html' %}
+
+{# custom styles & script #}
 {% include 'admin_styles/extrahead.html' %}
-{% endblock %}
+
+{% endspaceless %}{% endblock %}
 
 {% block bodyclass %}admin-styles {{ block.super }}{% endblock %}
 

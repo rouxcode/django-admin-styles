@@ -173,3 +173,73 @@ span.datetimeshortcuts {
     display: block;
     width: calc(100% - 2px);
 }
+
+
+/*Checkboxes styles*/
+.checkbox-row {
+
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    input[type='checkbox'] + label {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        padding-left: 35px !important;
+        color: #ddd;
+        font-weight: bold;
+        line-height: 24px;
+        cursor: pointer;
+    }
+
+    input[type='checkbox'] + label:before {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        width: 24px;
+        height: 24px !important;
+        border: 2px solid #999;
+        border-radius: 12px;
+        background-color: #999;
+        transition: all 0.12s, border-color 0.08s;
+    }
+
+    input[type='checkbox']:checked + label:before {
+        border-color: #70bf2b;
+        background-color: #70bf2b;
+    }
+
+    input[type='checkbox'] + label:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 4px;
+        left: 9px;
+        width: 3px !important;
+        height: 14px !important;
+        border-radius: 0;
+        border-right: 3px solid #fff;
+        transform: rotate(90deg);
+    }
+    
+    input[type='checkbox']:checked + label:after {
+        width: 6px !important;
+        height: 14px !important;
+        top: 2px;
+        left: 7px;
+        border-right: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        transform: rotate(40deg);
+    }
+
+    label {
+        flex-grow: 0;
+        width: auto !important;
+        order: 2;
+    }
+}
