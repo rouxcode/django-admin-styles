@@ -5,8 +5,6 @@
 {% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
 
 {% block extrahead %}
-<link rel="stylesheet" type="text/css" href="{% static "admin_styles/css/styles.css" %}" />
-{# TODO: enable certain contrib styles only when apps are installed, or on demand #}
 {% include 'admin_styles/extrahead.html' %}
 {% endblock %}
 
