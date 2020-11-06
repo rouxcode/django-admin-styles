@@ -5,6 +5,7 @@
 {% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
 
 {% block extrahead %}
+{% include 'admin_styles/adminhead.html' %}
 {% include 'admin_styles/extrahead.html' %}
 {% endblock %}
 
@@ -17,5 +18,5 @@
 {% endblock %}
 
 {% block welcome-msg %}{% endblock %}
-
+{% block userlinks %}{% include 'admin_styles/includes/userlinks.html' %}{% endblock %}
 {% block nav-global %}{% endblock %}

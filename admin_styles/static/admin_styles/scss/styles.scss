@@ -15,14 +15,17 @@ body {
 
 .admin-styles,
 .filebrowser {
-    @import "base/base";
-    @import "base/buttons";
-    @import "base/changelist";
-    @import "base/forms";
-    @import "base/widgets";
-    @import "base/login";
+    @import "admin/base";
+    @import "admin/buttons";
+    @import "admin/forms";
+    @import "admin/widgets";
+    
+    @import "admin/toolbar";
+    @import "admin/changelist";
+    @import "admin/changeform";
+    
+    @import "admin/login";
+    @import "admin/popup";
 
-    @import "base/popup";
-
-    @import "base/queries";
+    @import "admin/queries";
 }

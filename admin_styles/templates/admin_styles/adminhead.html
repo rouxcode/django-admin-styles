@@ -1,0 +1,39 @@
+{% spaceless %}
+{% load static %}
+
+{% comment %}
+
+{# THIS SHOULD BE THE DEFAULT #}
+<link rel="stylesheet" type="text/css" href="{% static "admin_styles/css/styles.css" %}" />
+
+{# TODO: enable certain contrib styles only when apps are installed, or on demand #}
+<link rel="stylesheet" type="text/css" href="{% static "admin_styles/css/contrib/cms.css" %}" />
+<link rel="stylesheet" type="text/css" href="{% static "admin_styles/css/contrib/filer.css" %}" />
+
+{# TODO compress this stuff #}
+<script type="text/javascript" src="{% static 'admin_styles/js/menu.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin_styles/js/collapse.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin_styles/js/select.slim.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin_styles/js/select.js' %}"></script>
+
+{% endcomment %}
+
+{# if set use compressor version #}
+{% load compress %}
+
+{# STYLES #}
+{% compress css %}
+<link rel="stylesheet" type="text/x-scss" href="{% static "admin_styles/scss/styles.scss" %}" />
+<link rel="stylesheet" type="text/x-scss" href="{% static "admin_styles/scss/contrib/cms.scss" %}" />
+<link rel="stylesheet" type="text/x-scss" href="{% static "admin_styles/scss/contrib/filer.scss" %}" />
+{% endcompress %}
+
+{# SCRIPTS #}
+{% compress js %}
+<script type="text/javascript" src="{% static 'admin_styles/js/menu.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin_styles/js/collapse.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin_styles/js/select.slim.js' %}"></script>
+<script type="text/javascript" src="{% static 'admin_styles/js/select.js' %}"></script>
+{% endcompress %}
+
+{% endspaceless %}

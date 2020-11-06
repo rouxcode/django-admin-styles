@@ -1,0 +1,33 @@
+&.change-form {
+
+    fieldset.module {
+
+        &.collapsable {
+            h2 {
+                position: relative;
+            }
+
+            h2:after {
+                content: '[ - ]';
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 8px 20px;
+                cursor: pointer;
+            }
+        }
+
+        &.closed {
+            margin-bottom: 10px;
+
+            .form-row,
+            .inline-related {
+                display: none;
+            }
+
+            h2:after {
+                content: '[ + ]';
+            }
+        }
+    }
+}
