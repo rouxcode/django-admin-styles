@@ -60,6 +60,17 @@
             margin-left: 0;
         }
     }
+
+    #changelist {
+
+        &.filtered {
+    
+            #toolbar,
+            #changelist-form {
+                width: calc(100% - 220px);
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
