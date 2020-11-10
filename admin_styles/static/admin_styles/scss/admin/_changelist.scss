@@ -11,7 +11,7 @@
 
         #toolbar,
         #changelist-form {
-            width: calc(100% - 260px);
+            width: calc(100% - 220px);
         }
     }
 
@@ -31,9 +31,10 @@
         top: auto;
         right: auto;
         box-sizing: border-box;
+        padding-top: 1px;
 
         h2 {
-            padding: 13px 15px;
+            padding: 7px 15px;
         }
     }
 
@@ -95,6 +96,11 @@
                 background-color: #f2f2f2;
             }
         }
+    }
+
+    thead th {
+        border-bottom: 0;
+        background-color: #ddd;
     }
 }
 

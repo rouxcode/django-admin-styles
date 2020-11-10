@@ -93,8 +93,12 @@ fieldset.module {
         line-height: 1;
     }
 
+    .vTextField,
+    .vLargeTextField,
+    .colM .aligned .vLargeTextField,
+    .colM .aligned .vXMLLargeTextField,
     textarea {
-        line-height: 1.2;
+        line-height: 1.25;
     }
 
     select {
