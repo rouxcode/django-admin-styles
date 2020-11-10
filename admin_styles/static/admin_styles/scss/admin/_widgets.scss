@@ -188,7 +188,7 @@ span.datetimeshortcuts {
         box-sizing: border-box;
         margin-bottom: 0;
         padding-left: 35px !important;
-        color: #ddd;
+        color: #999;
         font-weight: bold;
         line-height: 24px;
         cursor: pointer;
@@ -207,6 +207,10 @@ span.datetimeshortcuts {
         border-radius: 12px;
         background-color: #999;
         transition: all 0.12s, border-color 0.08s;
+    }
+
+    input[type='checkbox']:checked + label {
+        color:  #70bf2b;
     }
 
     input[type='checkbox']:checked + label:before {
