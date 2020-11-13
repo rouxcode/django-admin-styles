@@ -108,6 +108,14 @@ fieldset.module {
         height: 30px;
     }
 
+    .selector-available,
+    .selector-chosen {
+    
+        select {
+            width: 100%;
+        }
+    }
+
     input.vDateField,
     input.vTimeField {
         width: 120px;
