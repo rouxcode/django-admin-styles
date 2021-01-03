@@ -14,6 +14,7 @@ local_settings.py
 build
 storage
 docs/_build
+CACHE
 dist
 htmlcov
 .idea

@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
 from setuptools import setup, find_packages
 from admin_styles import __version__
 
@@ -38,7 +37,7 @@ setup(
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
     install_requires=[
-        'django>=1.11'
+        'django>=2.2',
     ],
     packages=find_packages(exclude=['example', 'docs']),
     include_package_data=True,

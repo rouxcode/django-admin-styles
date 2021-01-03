@@ -1,0 +1,6 @@
+/* remove django sidebar atm, as it feels and looks clumsy */
+
+#nav-sidebar,
+#toggle-nav-sidebar {
+    display: none !important;
+}

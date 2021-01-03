@@ -1,4 +1,6 @@
-django>=1.11,<3
+django>=2.2,<3.2
 libsass
 Pillow
 watchdog
+flake8
+autopep8
