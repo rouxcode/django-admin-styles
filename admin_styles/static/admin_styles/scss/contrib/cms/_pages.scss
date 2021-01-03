@@ -1,0 +1,59 @@
+&.model-page {
+
+    &.change-list {
+        .module h2 {
+            background-color: transparent;
+        }
+        
+        .cms-pagetree-empty {
+            
+            em {
+                display: block;
+            }
+            .addlink {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    &.change-form {
+        
+        .language_button {
+            background-color: #f4f4f4;
+
+            &.selected {
+                color: #000;
+                font-weight: bold;
+                background-color: #fff;
+            }
+        }
+
+        .deletelink-box {
+
+            .cms-btn-group {
+                display: inline-block;
+                box-sizing: border-box;
+                padding: 10px 15px;
+                color: #555;
+                font-size: 12px;
+                font-weight: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-transform: none;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                background-color: #f4f4f4;
+        
+                &:hover {
+                    color: #000;
+                }
+            }
+        
+            .cms-btn-active {
+                color: #000;
+                font-weight: bold;
+                background-color: #fff;
+            }
+        }
+    }
+}
