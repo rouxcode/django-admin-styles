@@ -26,7 +26,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'testproject', 'static')
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%&9@q+$c*9s##ss#@0(s!8_d@1s02%11yjum_m&5_nak14q-+b'
+SECRET_KEY = 'testproject-secretkey'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -46,10 +46,18 @@ WSGI_APPLICATION = 'testproject.wsgi.application'
 ROOT_URLCONF = 'testproject.urls'
 
 STATIC_URL = '/static/'
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+]
 
 INSTALLED_APPS = [
     'admin_styles',
     'testproject.testapp',
+
+    'compressor',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -98,8 +106,20 @@ DATABASES = {
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'}, # NOQA
-    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'}, # NOQA
-    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'}, # NOQA
-    {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'}, # NOQA
+    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},  # NOQA
+    {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},  # NOQA
+    {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'},  # NOQA
+    {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},  # NOQA
 ]
+
+
+# ============================================================================
+# COMPRESSOR/LIBSASS settings
+# ============================================================================
+
+COMPRESS_STORAGE = 'compressor.storage.GzipCompressorFileStorage'
+COMPRESS_PRECOMPILERS = [
+    ('text/x-scss', 'django_libsass.SassCompiler'),
+]
+LIBSASS_SOURCE_COMMENTS = False
+LIBSASS_OUTPUT_STYLE = 'compressed'
