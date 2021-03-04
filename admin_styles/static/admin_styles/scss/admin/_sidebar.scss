@@ -4,3 +4,7 @@
 #toggle-nav-sidebar {
     display: none !important;
 }
+
+.main.shifted > #nav-sidebar + .content {
+    max-width: 100%;
+}
