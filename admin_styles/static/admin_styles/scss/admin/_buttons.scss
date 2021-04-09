@@ -55,6 +55,13 @@ a.deletelink {
     display: flex;
     justify-content: flex-end;
 
+    .button, 
+    input[type="submit"], 
+    input[type="button"], 
+    a.button {
+        margin: 0 0 0 8px;
+    }
+
     p.deletelink-box {
         order: 1;
         float: none;

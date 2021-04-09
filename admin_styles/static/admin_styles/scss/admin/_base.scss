@@ -24,7 +24,8 @@ table {
 
 
 #container {
-    padding: 48px 0;
+    box-sizing: border-box;
+    padding: 94px 0;
     background-color: #f4f4f4;
 }
 
@@ -40,7 +41,7 @@ table {
     padding: 10px 20px;
     color: #222;
     background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #aaa;
     box-shadow: 0 10px 10px rgba(#f4f4f4, 1);
     overflow: visible;
 
@@ -108,14 +109,17 @@ table {
 
 
 .breadcrumbs {
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 46px;
+    width: 100%;
     z-index: 2;
     margin: 0;
     padding: 10px 20px;
     color: #222;
     font-weight: bold;
     background-color: #f4f4f4;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #aaa;
 
     a {
         font-weight: normal;
