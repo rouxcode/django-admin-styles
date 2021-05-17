@@ -25,7 +25,7 @@ table {
 
 #container {
     box-sizing: border-box;
-    padding: 94px 0;
+    padding: 84px 0 60px;
     background-color: #f4f4f4;
 }
 
@@ -42,7 +42,6 @@ table {
     color: #222;
     background-color: #fff;
     border-bottom: 1px solid #ccc;
-    box-shadow: 0 10px 10px rgba(#f4f4f4, 1);
     overflow: visible;
 
     a:link,
@@ -112,6 +111,8 @@ table {
     position: fixed;
     left: 0;
     top: 46px;
+    display: block;
+    box-sizing: border-box;
     width: 100%;
     z-index: 2;
     margin: 0;
