@@ -7,14 +7,6 @@
         justify-content: space-between;
     }
 
-    &.filtered {
-
-        #toolbar,
-        #changelist-form {
-            width: calc(100% - 260px);
-        }
-    }
-
     #toolbar {
         order: 1;
         box-sizing: border-box;
