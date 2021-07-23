@@ -5,12 +5,14 @@ input[type="submit"],
 input[type="button"],
 a.button  {
     box-sizing: border-box;
+    height: auto;
+    margin: 0 auto;
     padding: 10px 15px;
     color: #666;
     line-height: 1;
     border: 1px solid #ddd;
     border-radius: $buttons-border-radius;
-    background: #fff;
+    background-color: #fff;
 
     &:hover {
         background-color: #f2f2f2;
@@ -36,10 +38,29 @@ a.deletelink {
     border-radius: $buttons-border-radius;
 }
 
+&.delete-confirmation form {
+    
+    input[type="submit"] {
+        border: 0;
+        border-radius: 3px;
+    }
+
+    .cancel-link {
+        color: #000;
+    }
+}
+
 .submit-row {
 
     display: flex;
     justify-content: flex-end;
+
+    .button, 
+    input[type="submit"], 
+    input[type="button"], 
+    a.button {
+        margin: 0 0 0 8px;
+    }
 
     p.deletelink-box {
         order: 1;

@@ -6,13 +6,21 @@
     margin-top: 0 !important;  // always. against the cms itself.
 }
 // adapt header height, so the toolbar is the same height as our header
-&.cms-admin-sideframe, &.cms-admin-modal {
+&.cms-admin-sideframe, 
+&.cms-admin-modal {
+
     #header {
         height: $cms_header_height;
     }
 }
 // we dont need no, toop padding.
 &.cms-admin-modal {
+    
+    // hide breadcrumps in modal popup
+    .breadcrumbs {
+        display: none;
+    }
+
     #container {
         padding-top: 0;
         // better compat with django 1.11
