@@ -1,0 +1,19 @@
+.inline-related {
+    
+    h3 {
+        span.delete {
+            display: flex;
+        }
+    }
+}
+
+.admin-sort-inline {
+
+    .inline-related {
+
+        & > h3,
+        .form-row {
+            padding-left: 10px;
+        }
+    }
+}
