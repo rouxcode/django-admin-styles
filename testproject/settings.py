@@ -58,6 +58,9 @@ INSTALLED_APPS = [
 
     'compressor',
 
+    'easy_thumbnails',
+    'filer',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

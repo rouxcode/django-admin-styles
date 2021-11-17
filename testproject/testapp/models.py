@@ -2,6 +2,9 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
+from filer.fields.file import FilerFileField
+from filer.fields.image import FilerImageField
+
 
 class AdminStylesTest(models.Model):
 
@@ -150,6 +153,21 @@ class AdminStylesTest(models.Model):
         related_name='%(app_label)s_%(class)s_onetoone',
         verbose_name='OneToOneField',
         help_text='this is a help text for the one to one field'
+    )
+
+    filer_file = FilerFileField(
+        null=True,
+        on_delete=models.SET_NULL,
+        related_name='filer_file_set',
+        verbose_name='file',
+        help_text='this is a help text for the filer file field'
+    )
+    filer_image = FilerImageField(
+        null=True,
+        on_delete=models.SET_NULL,
+        related_name='filer_image_set',
+        verbose_name='file',
+        help_text='this is a help text for the filer image field'
     )
 
     class Meta:

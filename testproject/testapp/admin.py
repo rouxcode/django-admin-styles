@@ -115,6 +115,13 @@ class AdminStylesTestAdmin(admin.ModelAdmin):
                 'manytomany_d',
             ],
         }),
+
+        ('Filer', {
+            'fields': [
+                'filer_file',
+                'filer_image',
+            ],
+        }),
     ]
     list_display = [
         '__str__',
