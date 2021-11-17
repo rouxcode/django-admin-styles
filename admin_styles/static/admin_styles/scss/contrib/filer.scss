@@ -1,8 +1,25 @@
-form .form-row .filer-dropzone {
+#content form .form-row .filer-dropzone {
     width: 100%;
+    position: relative;
+    min-height: 80px !important;
+    background-color: #fff;
 
     & ~ a {
         display: none !important;
+    }
+
+    .dz-message {
+        position: absolute;
+        top: 50%;
+        margin-top: 0 !important;
+        transform: translateY(-50%);
+    }
+
+    .filerFile,
+    .filerFile.js-file-selector,
+    &.js-object-attached .filerFile {
+        top: 50% !important;
+        transform: translateY(-50%);
     }
 }
 
