@@ -13,28 +13,6 @@
         height: $cms_header_height;
     }
 }
-// we dont need no, toop padding.
-&.cms-admin-modal {
-    
-    // hide breadcrumps in modal popup
-    .breadcrumbs {
-        display: none;
-    }
-
-    #container {
-        padding-top: 0;
-        // better compat with django 1.11
-        min-width: 400px;
-    }
-    #header {
-        // do what djangocms-admin-styles does
-        display: none;
-    }
-    #content {
-        // 38px get added by js. we hide .object-tools!
-        padding-top: 18px !important;
-    }
-}
 
 
 // changelist / pagetree

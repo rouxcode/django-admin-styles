@@ -1,0 +1,27 @@
+&.cms-admin-modal {
+
+    #header,
+    .breadcrumbs {
+        display: none;
+    }
+
+    #container {
+        padding: 0;
+    }
+
+    #content {
+        padding: 0;
+
+        & > h2 {
+            display: none;
+        }
+
+        .form-row:not(.fieldBox) {
+            padding: 10px 20px;
+        }
+
+        .module h2 {
+            padding: 8px 20px;
+        }
+    }
+}
