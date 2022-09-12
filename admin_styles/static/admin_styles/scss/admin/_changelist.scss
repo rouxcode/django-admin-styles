@@ -19,14 +19,18 @@
     #changelist-filter {
         order: 3;
         z-index: 1;
+        width: 100%;
+        box-sizing: border-box;
         position: relative;
         top: auto;
         right: auto;
         box-sizing: border-box;
-        padding-top: 1px;
-
         h2 {
             padding: 7px 15px;
+        }
+        @media(min-width: 765px) {
+            width: 270px;
+            padding: 3px 0 0 3px;
         }
     }
 
@@ -34,8 +38,10 @@
         order: 2;
         box-sizing: border-box;
         width: 100%;
+        @media(min-width: 765px) {
+            width: calc(100% - 270px);
+        }
         margin: 0;
-
         .vTextField,
         .vUUIDField {
             box-sizing: border-box;
