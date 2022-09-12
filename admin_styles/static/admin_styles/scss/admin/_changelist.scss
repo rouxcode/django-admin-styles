@@ -37,9 +37,6 @@
         order: 2;
         box-sizing: border-box;
         width: 100%;
-        @media(min-width: 765px) {
-            width: calc(100% - 270px);
-        }
         margin: 0;
         .vTextField,
         .vUUIDField {
@@ -53,6 +50,14 @@
     .results {
         box-sizing: border-box;
         margin: 0;
+    }
+
+    &.module.filtered {
+        #changelist-form {
+            @media(min-width: 765px) {
+                width: calc(100% - 270px);
+            }
+        }
     }
 
     #changelist-search {
