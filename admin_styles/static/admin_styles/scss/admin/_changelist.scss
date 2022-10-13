@@ -53,7 +53,7 @@
     }
 
     &.module.filtered {
-        #changelist-form {
+        > #changelist-form, > .changelist-form-container {
             @media(min-width: 765px) {
                 width: calc(100% - 270px);
             }
