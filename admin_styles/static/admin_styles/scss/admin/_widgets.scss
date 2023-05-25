@@ -176,6 +176,8 @@ span.datetimeshortcuts {
 
 
 /*Checkboxes styles*/
+// deactivate as we cant get this to work on all checkboxes
+/*
 .checkbox-row {
 
     input[type='checkbox'] {
@@ -204,8 +206,8 @@ span.datetimeshortcuts {
         width: 24px;
         height: 24px !important;
         border: 2px solid #999;
-        border-radius: 12px;
-        background-color: #999;
+        border-radius: 2px;
+        background-color: #fff;
         transition: all 0.12s, border-color 0.08s;
     }
 
@@ -241,9 +243,10 @@ span.datetimeshortcuts {
         transform: rotate(40deg);
     }
 
-    label {
+    input[type='checkbox'] + label {
         flex-grow: 0;
         width: auto !important;
         order: 2;
     }
 }
+*/
