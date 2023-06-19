@@ -19,4 +19,6 @@ dist
 htmlcov
 .idea
 .tox
+# exclude node/webpack folders
 node_modules
+static_dev/

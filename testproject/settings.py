@@ -51,6 +51,9 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'compressor.finders.CompressorFinder',
 ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'admin_styles', 'static_dev')
+]
 
 INSTALLED_APPS = [
     'admin_styles',
@@ -97,7 +100,7 @@ TEMPLATES = [
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

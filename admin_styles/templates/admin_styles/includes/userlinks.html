@@ -16,6 +16,22 @@
             <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a>
         </li>
     {% endif %}
+    <li>
+        <a class="theme-toggle">
+            <div class="visually-hidden theme-label-when-auto">{% translate 'Toggle theme (current theme: auto)' %}</div>
+            <div class="visually-hidden theme-label-when-light">{% translate 'Toggle theme (current theme: light)' %}</div>
+            <div class="visually-hidden theme-label-when-dark">{% translate 'Toggle theme (current theme: dark)' %}</div>
+            <svg aria-hidden="true" class="theme-icon-when-auto">
+                <use xlink:href="#icon-auto" />
+            </svg>
+            <svg aria-hidden="true" class="theme-icon-when-dark">
+                <use xlink:href="#icon-moon" />
+            </svg>
+            <svg aria-hidden="true" class="theme-icon-when-light">
+                <use xlink:href="#icon-sun" />
+            </svg>
+        </a>
+    </li>
     <li class="logout">
         <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
     </li>

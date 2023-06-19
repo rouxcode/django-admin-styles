@@ -1,0 +1,29 @@
+#header {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 3rem;
+    padding: 0.625rem 1.25rem;
+    border-bottom: var(--header-border);
+    border-color: var(--header-border-color);
+}
+
+#branding {
+    width: auto;
+    height: 100%;
+
+    a,
+    h1 {
+        display: block;
+        width: auto;
+        height: 100%;
+        margin: 0;
+    }
+    svg {
+        display: block;
+        width: auto;
+        height: 100%;
+    }
+}
