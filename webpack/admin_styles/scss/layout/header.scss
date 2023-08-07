@@ -8,6 +8,7 @@
     padding: 0.625rem 1.25rem;
     border-bottom: var(--header-border);
     border-color: var(--header-border-color);
+    background: var(--header-bg);
 }
 
 #branding {
@@ -25,5 +26,9 @@
         display: block;
         width: auto;
         height: 100%;
+    }
+
+    path {
+        fill: var(--header-fg);
     }
 }

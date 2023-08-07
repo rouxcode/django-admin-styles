@@ -1,0 +1,11 @@
+.admin-styles.login {
+
+    #header {
+        position: relative;
+        background-color: var(--header-fg);
+
+        path {
+            fill: var(--header-bg);
+        }
+    }
+}

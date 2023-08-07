@@ -1,5 +1,6 @@
 :root,
 html[data-theme="light"] {
+
     --primary: #79aec8;
     --secondary: #417690;
     --accent: #f5dd5d;
@@ -12,11 +13,11 @@ html[data-theme="light"] {
     --body-quiet-color: #666;
     --body-loud-color: #000;
 
-    --header-color: #ffc;
-    --header-link-color: var(--primary-fg);
+    --header-fg: var(--body-fg);
     --header-bg: var(--primary-fg);
+    --header-link-fg: var(--body-fg);
     --header-border: 1px solid;
-    --header-border-color: var(--primary-border-color);
+    --header-border-color: var(--body-fg);
     --header-branding-color: var(--accent);
 
     --breadcrumbs-fg: #c4dce8;
