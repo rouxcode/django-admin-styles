@@ -1,0 +1,92 @@
+:root,
+html[data-theme="light"] {
+
+    // sizes ------------------------------------------------------------------
+
+    --header-height: 2.875rem;
+
+    --sidebar-width-closed: 1.25rem;
+    --sidebar-width-open: 18.75rem;
+
+    --breadcrumbs-height: 2.375rem;
+
+    --submit-row-height: 2.875rem;
+
+
+    // colors -----------------------------------------------------------------
+
+    --primary: #79aec8;
+    --secondary: #417690;
+    --accent: #f5dd5d;
+    --primary-fg: #fff;
+    --primary-border: 1px solid;
+    --primary-border-color: #ccc;
+
+    --body-fg: #333;
+    --body-bg: #fff;
+    --body-quiet-color: #666;
+    --body-loud-color: #000;
+
+    --link-fg: #417893;
+    --link-hover-color: #036;
+    --link-selected-fg: #5b80b2;
+
+    --content-bg: #f4f4f4;
+
+    --header-fg: var(--body-fg);
+    --header-color: var(--header-fg);
+    --header-bg: var(--primary-fg);
+    --header-link-fg: var(--link-fg);
+    --header-border: 1px solid;
+    --header-border-color: var(--primary-border-color);
+    --header-branding-color: var(--accent);
+
+    --breadcrumbs-bg: var(--content-bg);
+    --breadcrumbs-fg: var(--body-fg);
+    --breadcrumbs-link-fg: var(--link-fg);
+    --breadcrumbs-border-color: var(--primary-border-color);
+
+    --sidebar-fg: var(--body-fg);
+    --sidebar-bg: var(--content-bg);
+    --sidebar-border-color: var(--primary-border-color);
+    --sidebar-button-bg: var(--body-bg);
+    --sidebar-button-fg: var(--body-fr);
+
+    --hairline-color: #e8e8e8;
+    --border-color: #ccc;
+
+    --error-fg: #ba2121;
+
+    --message-success-bg: #dfd;
+    --message-warning-bg: #ffc;
+    --message-error-bg: #ffefef;
+
+    --darkened-bg: #f8f8f8;
+    /* A bit darker than --body-bg */
+    --selected-bg: #e4e4e4;
+    /* E.g. selected table cells */
+    --selected-row: #ffc;
+
+    --button-fg: #fff;
+    --button-bg: var(--primary);
+    --button-hover-bg: #609ab6;
+    --default-button-bg: var(--secondary);
+    --default-button-hover-bg: #205067;
+    --close-button-bg: #747474;
+    --close-button-hover-bg: #333;
+    --delete-button-bg: #ba2121;
+    --delete-button-hover-bg: #a41515;
+
+    --object-tools-fg: var(--button-fg);
+    --object-tools-bg: var(--close-button-bg);
+    --object-tools-hover-bg: var(--close-button-hover-bg);
+
+    --submit-row-bg: var(--primary-fg);
+    --submit-row-border-color: var(--primary-border-color);
+
+
+    // fonts ------------------------------------------------------------------
+
+    --font-family-primary: "Source Sans", "Source Sans 3", "Source Sans Pro", Inter, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: "Source Code", "Source Code Pro", ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}

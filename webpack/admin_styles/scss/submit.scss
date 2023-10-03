@@ -1,0 +1,35 @@
+.submit-row {
+    position: fixed;
+    left: 0;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    border: 0;
+    background-color: var(--submit-row-bg);
+    border: 0;
+    border-radius: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: var(--submit-row-border-color);
+
+    & > div,
+    & > a,
+    & > a.deletelink,
+    & > a.cancellink,
+    & > button,
+    & > input {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+}
+
+#nav-sidebar + #content-start .submit-row {
+    left: var(--sidebar-width-closed);
+}
+
+.shifted #nav-sidebar + #content-start .submit-row {
+    left: var(--sidebar-width-open);
+    ;
+}

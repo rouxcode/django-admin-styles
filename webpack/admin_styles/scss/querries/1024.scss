@@ -1,0 +1,11 @@
+@media (max-width: 1024px) {
+
+    div#header {
+        flex-direction: row;
+        padding: 0 1.25rem;
+
+        #user-tools {
+            margin: 0 0 0 2rem;
+        }
+    }
+}

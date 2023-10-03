@@ -1,0 +1,30 @@
+@media (max-width: 767px) {
+
+    .main > #nav-sidebar + .content,
+    .main.shifted > #nav-sidebar + .content {
+        padding-left: 0;
+    }
+
+    #nav-sidebar + #content-start .submit-row,
+    .shifted #nav-sidebar + #content-start .submit-row {
+        left: 0;
+    }
+
+    div.submit-row {
+        margin: 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        input,
+        button,
+        a {
+            flex-shrink: 1;
+            flex-grow: 0;
+            max-width: 25%;
+        }
+
+        a.deletelink {
+            margin: 0 0 0 auto;
+        }
+    }
+}

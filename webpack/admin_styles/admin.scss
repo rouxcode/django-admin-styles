@@ -1,8 +1,18 @@
+@import "scss/vars";
 @import "scss/base";
 
+@import "scss/buttons";
+@import "scss/submit";
 
 @import "scss/layout/breadcrumbs";
 @import "scss/layout/header";
 @import "scss/layout/sidebar";
+@import "scss/layout/content";
 
+@import "scss/views/list";
+@import "scss/views/change";
+@import "scss/views/delete";
 @import "scss/views/login";
+
+@import "scss/querries/1024";
+@import "scss/querries/768";
