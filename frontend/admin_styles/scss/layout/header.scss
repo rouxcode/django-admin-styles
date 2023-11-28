@@ -4,6 +4,8 @@
     left: 0;
     top: 0;
     right: 0;
+    display: flex;
+    justify-content: flex-start;
     height: var(--header-height);
     padding: 0 1.25rem;
     overflow: visible;
@@ -37,7 +39,7 @@
 
 #user-tools {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     flex-direction: row-reverse;
@@ -47,7 +49,7 @@
     padding: 0;
     margin: 0 0 0 2rem;
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-shrink: 1;
     font-weight: normal;
     font-size: 0.875rem;
     line-height: 1;
@@ -84,7 +86,7 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        width: auto;
+        width: 10rem;
         margin: 0;
         padding: 0;
         list-style: none;
@@ -100,9 +102,12 @@
             padding: 0;
             border: 1px solid var(--header-border-color);
             border-top: 0;
+            background-color: var(--header-bg);
 
             &:nth-child(1) {
                 order: 1;
+                border: 0;
+                border-bottom: 1px solid var(--header-border-color);
             }
 
             &:nth-child(2) {
@@ -116,6 +121,15 @@
             &:nth-child(4) {
                 order: 11;
             }
+
+            &:hover:not(:first-child) {
+                border-color: var(--primary);
+            }
+
+            div {
+                height: 100%;
+            }
+
         }
 
         a,
@@ -128,7 +142,13 @@
             margin: 0;
             padding: 0.5rem;
             border: 0;
-            background-color: var(--header-bg);
+
+        }
+
+        a:hover {
+            color: #fff;
+            text-decoration: none;
+            background-color: var(--primary);
         }
 
         .theme-toggle {
@@ -136,6 +156,9 @@
             svg.theme-icon-when-auto,
             svg.theme-icon-when-dark,
             svg.theme-icon-when-light {
+                display: block;
+                height: 100%;
+
                 fill: var(--header-link-fg);
                 color: var(--header-bg);
             }

@@ -6,7 +6,7 @@
     z-index: 1;
     position: relative;
     width: 100%;
-    padding: var(--header-height) 0 var(--submit-row-height);
+    padding: calc(var(--header-height) + var(--breadcrumbs-height)) 0 var(--submit-row-height);
     background-color: var(--content-bg);
 }
 

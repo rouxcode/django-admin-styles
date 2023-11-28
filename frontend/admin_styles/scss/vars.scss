@@ -1,3 +1,9 @@
+$header-height: 2.875rem;
+$sidebar-width-closed: 1.25rem;
+$sidebar-width-open: 18.75rem;
+$breadcrumbs-height: 2.375rem;
+$submit-row-height: 2.875rem;
+
 :root,
 html[data-theme="light"] {
 
@@ -51,6 +57,8 @@ html[data-theme="light"] {
     --sidebar-border-color: var(--primary-border-color);
     --sidebar-button-bg: var(--body-bg);
     --sidebar-button-fg: var(--body-fr);
+    --sidebar-caption-bg: var(--primary);
+    --sidebar-caption-fg: var(--primary-fg);
 
     --hairline-color: #e8e8e8;
     --border-color: #ccc;
@@ -87,6 +95,6 @@ html[data-theme="light"] {
 
     // fonts ------------------------------------------------------------------
 
-    --font-family-primary: "Source Sans", "Source Sans 3", "Source Sans Pro", Inter, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-primary: "Source Sans 3", Inter, system-ui, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: "Source Code", "Source Code Pro", ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }

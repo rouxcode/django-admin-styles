@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# SETTINGS
+ADDRESS=0.0.0.0
+PORT=5000
+SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+
+# DJANGO DEV SERVER
+function run_django()
+{
+    $SCRIPT_DIR/testproject/manage.py runserver $ADDRESS:$PORT
+}
+
+run_django

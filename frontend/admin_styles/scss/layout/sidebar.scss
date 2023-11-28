@@ -60,6 +60,19 @@ nav#nav-sidebar {
         background-color: var(--sidebar-bg);
     }
 
+    table {
+        width: 100%;
+    }
+
+    .module caption {
+        color: var(--sidebar-caption-fg);
+        background-color: var(--sidebar-caption-bg);
+
+        .section {
+            color: var(--sidebar-caption-fg);
+        }
+    }
+
     .module td {
         display: none;
     }
@@ -77,6 +90,7 @@ nav#nav-sidebar {
     }
 
     #nav-sidebar {
+        left: 0;
         width: var(--sidebar-width-open);
     }
 }
