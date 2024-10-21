@@ -5,5 +5,4 @@ include LICENSE
 recursive-include admin_styles *.py
 recursive-include admin_styles/static *
 recursive-include admin_styles/templates *
-recursive-include admin_styles/management *
 recursive-exclude * *.pyc
